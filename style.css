@@ -236,7 +236,19 @@ a {
   gap: clamp(1.25rem, 3vw, 2rem);
 }
 
-.reel-grid .instagram-media {
+.reel-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.reel-title {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+.reel-item .instagram-media {
   width: 100% !important;
   max-width: 100% !important;
   min-width: 0 !important;
