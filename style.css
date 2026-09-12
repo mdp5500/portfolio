@@ -232,15 +232,22 @@ a {
 
 .reel-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(326px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(1.25rem, 3vw, 2rem);
-  justify-content: start;
 }
 
 .reel-grid .instagram-media {
   width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
   margin: 0 !important;
   border: 1px solid var(--line) !important;
+}
+
+@media (max-width: 620px) {
+  .reel-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---------------------------------------------------
