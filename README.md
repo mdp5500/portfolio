@@ -35,6 +35,13 @@ apex vs. subdomain) — GitHub's docs walk through the exact records.
   `your-track-url-1/2/3` and won't play anything until replaced).
 - **Email** — update the `mailto:` address and visible text in the contact
   section.
+- **Reels** — each reel is a `<blockquote class="instagram-media">` in the
+  `<section id="reels">` block. To add your own: open the reel on Instagram,
+  click the **···** menu → **Embed**, and copy the `data-instgrm-permalink`
+  URL into a blockquote (or paste Instagram's whole embed snippet in place of
+  one of the placeholders). Copy/paste a blockquote to add more, delete one
+  to remove. The page loads Instagram's embed script automatically to render
+  them.
 
 ## Notes
 - Fonts (Fraunces, Public Sans) load from Google Fonts — an internet

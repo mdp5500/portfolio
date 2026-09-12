@@ -189,12 +189,58 @@ a {
 }
 
 .work-player {
-  align-self: center;
+  align-self: start;
 }
 
 .work-player iframe {
   display: block;
   border: 1px solid var(--line);
+}
+
+.sc-credit {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  font-family: var(--sans);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sc-credit a {
+  color: var(--ink-muted);
+}
+
+.sc-credit a:hover {
+  color: var(--ink);
+}
+
+/* ---------------------------------------------------
+   Reels
+--------------------------------------------------- */
+.reels {
+  padding: 4rem var(--gutter) 6rem;
+  max-width: 1180px;
+  margin: 0 auto;
+  border-top: 1px solid var(--line);
+}
+
+.reels h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.reel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(326px, 1fr));
+  gap: clamp(1.25rem, 3vw, 2rem);
+  justify-content: start;
+}
+
+.reel-grid .instagram-media {
+  width: 100% !important;
+  margin: 0 !important;
+  border: 1px solid var(--line) !important;
 }
 
 /* ---------------------------------------------------
